@@ -58,6 +58,7 @@ export function ImmersiveHero({
         <Picture name={image} alt={imageAlt} priority sizes="100vw" className="h-full w-full object-cover" />
       </motion.div>
       {videoSrc ? <HeroVideo src={videoSrc} style={{ y: imageY, scale: imageScale }} /> : null}
+      {videoSrc ? <div className="absolute inset-0 -z-10 bg-black/30" aria-hidden="true" /> : null}
       <div
         className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgb(34_37_34/0.7)_0%,rgb(34_37_34/0.15)_32%,rgb(34_37_34/0.25)_60%,rgb(34_37_34/0.78)_100%)]"
         aria-hidden="true"
