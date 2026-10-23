@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "About MAES17 — Geodesy and land surveying by {{owner}}",
+    "description": "How MAES17 approaches geodesy, surveying and land development: purpose-driven measurement, checked results and clear documentation. Operated by {{owner}}, individual entrepreneur."
+  },
+  "hero": {
+    "title": "Measurement you can build on.",
+    "lede": "MAES17 is a geodesy, land surveying and land development practice. We turn land and structures into reliable coordinates, plans and documents.",
+    "imageAlt": "Shaded relief of mountain ridges at dusk with faint contour lines"
+  },
+  "overview": {
+    "title": "Who we are",
+    "paragraphs": [
+      "MAES17 is operated by {{owner}}, individual entrepreneur, together with a team of qualified surveying and land management specialists. The team covers the full chain of survey work: establishing control, measuring in the field, processing observations and preparing the plans and files that clients need.",
+      "Clients include private landowners, designers, builders and organisations that need dependable spatial information before they buy, design, build or register."
+    ]
+  },
+  "mission": {
+    "title": "Mission",
+    "text": "To give every client measurements they can rely on, explained in terms they can act on."
+  },
+  "vision": {
+    "title": "Vision",
+    "text": "A practice known for careful fieldwork, transparent methods and documentation that remains useful long after the project ends."
+  },
+  "values": {
+    "title": "Principles we work by",
+    "items": [
+      {
+        "title": "Accuracy is verified, not assumed",
+        "text": "Measurements are checked against control and redundancy before results are issued."
+      },
+      {
+        "title": "Method follows purpose",
+        "text": "A boundary question, a design survey and a construction layout each need different tolerances and outputs."
+      },
+      {
+        "title": "Transparency",
+        "text": "Scope, methods, limitations and deliverables are stated clearly in advance."
+      },
+      {
+        "title": "Responsibility",
+        "text": "Every project has a responsible lead you can reach directly."
+      }
+    ]
+  },
+  "team": {
+    "title": "Expertise",
+    "text": "{{owner}} leads a team of specialists in geodesy, surveying and land management who carry out the fieldwork, data processing and documentation. Details of the team's qualifications and project experience will be published here once confirmed."
+  },
+  "methodology": {
+    "title": "Working methodology",
+    "lede": "Each project follows the same documented sequence, from the first conversation to final delivery.",
+    "link": "See the full process on the home page"
+  },
+  "technology": {
+    "title": "Equipment and technology",
+    "text": "Work combines satellite positioning, total station measurement and digital processing in CAD and GIS software. The instruments used and the achievable accuracy are stated in the proposal for each project.",
+    "imageAlt": "Yellow robotic total station on a tripod at a road construction site"
+  },
+  "quality": {
+    "title": "Quality assurance",
+    "items": [
+      "Measurements tie to defined control points and a stated coordinate system.",
+      "Independent checks and closures are used to detect errors before drafting.",
+      "Deliverables list the methods, date of survey and coordinate system used.",
+      "Raw and processed data are archived so results can be traced later."
+    ]
+  },
+  "cta": {
+    "title": "Have a site in mind?",
+    "text": "A short call is usually enough to define what needs to be measured.",
+    "button": "Contact us"
+  }
+}

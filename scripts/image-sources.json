@@ -1,0 +1,104 @@
+[
+  {
+    "name": "terrain-scan",
+    "maxWidth": 2400,
+    "local": "assets-src/photos/terrain-scan.jpeg",
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 1420,
+      "height": 760
+    },
+    "note": "Supplied by the owner. Bottom-right generator watermark cropped out. Confirm usage rights before launch."
+  },
+  {
+    "name": "contour-relief",
+    "maxWidth": 2400,
+    "local": "assets-src/photos/contour-relief.jpeg",
+    "note": "Supplied by the owner. Confirm usage rights before launch."
+  },
+  {
+    "name": "total-station",
+    "maxWidth": 2400,
+    "local": "assets-src/photos/total-station.jpeg",
+    "note": "Supplied by the owner. Confirm usage rights before launch."
+  },
+  {
+    "name": "hero-video-poster",
+    "maxWidth": 2400,
+    "local": "assets-src/video/hero-poster.png",
+    "note": "First frame of the owner-supplied hero video (assets-src/video/hero-source.mp4)."
+  },
+  {
+    "name": "art-as-built",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-as-built.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-cadastre",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-cadastre.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-control-network",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-control-network.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-land-division",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-land-division.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-profile",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-profile.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-project-hillside",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-project-hillside.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-project-lakeside",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-project-lakeside.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-project-plots",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-project-plots.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-project-slope",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-project-slope.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-relief-dusk",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-relief-dusk.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-setting-out",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-setting-out.png",
+    "note": "Generated illustration (npm run art)."
+  },
+  {
+    "name": "art-survey-plan",
+    "maxWidth": 2400,
+    "local": "assets-src/art/art-survey-plan.png",
+    "note": "Generated illustration (npm run art)."
+  }
+]

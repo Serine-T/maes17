@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <title>MAES17</title>
+  <g fill="none" stroke="#F7F6F2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 4C37 5 45 13 44 24C43 34 36 43 24 44C13 45 4 37 4 26C4 18 8 13 13 9C17 6 21 3.6 26 4Z" stroke-width="2" opacity="0.55"/>
+    <path d="M25 11C32 11.5 37.5 17 37 24.5C36.5 31.5 31 37 24 37C17 37 11.5 32 11.5 25C11.5 20 13.5 17 16.5 14.5C19 12.3 21.7 10.8 25 11Z" stroke-width="2"/>
+    <path d="M24 16.5L31 29H17Z" stroke-width="2.4" stroke="#D9581F"/>
+    <circle cx="24" cy="24.8" r="1.7" fill="#D9581F" stroke="none"/>
+  </g>
+</svg>

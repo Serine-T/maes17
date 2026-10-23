@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Contact MAES17 — Call {{phone}}, WhatsApp or Telegram",
+    "description": "Contact {{owner}} of MAES17 about geodesy, land surveying and land development work: phone {{phone}}, WhatsApp or Telegram."
+  },
+  "hero": {
+    "title": "Let's talk about your site.",
+    "lede": "The quickest way to start is a phone call or a message. Tell us where the site is, what the survey is for and which documents you have."
+  },
+  "details": {
+    "title": "Contact details",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "owner": "Responsible person",
+    "ownerRole": "Individual entrepreneur",
+    "hours": "Working hours",
+    "area": "Service area",
+    "areaPending": "Service area to be confirmed — ask about your location",
+    "openWhatsapp": "Open chat in WhatsApp",
+    "openTelegram": "Open chat in Telegram",
+    "openInstagram": "Open profile on Instagram"
+  },
+  "map": {
+    "title": "Site visits",
+    "text": "Surveys take place on site. Office address details will be published once confirmed; until then, meetings are arranged by phone.",
+    "label": "Schematic contour map placeholder"
+  },
+  "form": {
+    "title": "Prepare a project inquiry",
+    "lede": "Fill in the form and we will prepare a WhatsApp message with your details. Nothing is sent from this website — you review the message and send it yourself.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "contact": "Phone or email",
+    "contactPlaceholder": "So we can reply",
+    "service": "Service",
+    "servicePlaceholder": "Choose a service",
+    "serviceOther": "Other or not sure",
+    "message": "Message",
+    "messagePlaceholder": "Location of the site, purpose of the survey, available documents…",
+    "required": "required",
+    "submit": "Prepare WhatsApp message",
+    "copy": "Copy message",
+    "copied": "Message copied",
+    "errors": {
+      "summary": "Please correct the highlighted fields.",
+      "nameRequired": "Enter your name.",
+      "contactRequired": "Enter a phone number or email address.",
+      "contactInvalid": "Enter a valid phone number or email address.",
+      "serviceRequired": "Choose a service, or select “Other or not sure”.",
+      "messageRequired": "Describe your project in a few words.",
+      "messageShort": "Add a little more detail (at least 10 characters)."
+    },
+    "success": {
+      "title": "Your message is ready",
+      "text": "WhatsApp should open in a new tab with the message filled in. It is not sent until you press send in WhatsApp. If WhatsApp did not open, copy the message and send it by Telegram or call {{phone}}.",
+      "open": "Open WhatsApp again",
+      "reset": "Start a new inquiry"
+    },
+    "messageTemplate": {
+      "greeting": "Hello! Inquiry from the MAES17 website.",
+      "name": "Name",
+      "contact": "Contact",
+      "service": "Service",
+      "message": "Message"
+    }
+  }
+}

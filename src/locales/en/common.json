@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "siteName": "MAES17",
+    "defaultTitle": "MAES17 — Geodesy, land surveying and land development",
+    "defaultDescription": "MAES17 provides geodetic, topographic, cadastral and construction surveying and land development services. Contact {{owner}} at {{phone}}."
+  },
+  "brand": {
+    "tagline": "Precision. Land. Expertise.",
+    "logoAlt": "MAES17 — home page"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "faq": "Questions",
+    "contacts": "Contacts"
+  },
+  "header": {
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "switchLanguage": "Switch language to {{language}}",
+    "currentLanguage": "Current language: {{language}}"
+  },
+  "actions": {
+    "ourServices": "Our services",
+    "contactUs": "Contact us",
+    "call": "Call",
+    "callNumber": "Call {{phone}}",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "learnMore": "Learn more",
+    "allServices": "All services",
+    "discussProject": "Discuss your project",
+    "requestConsultation": "Request a consultation",
+    "backHome": "Back to the home page",
+    "readAnswers": "Read the answers",
+    "instagram": "Instagram"
+  },
+  "contactLauncher": {
+    "open": "Open contact options",
+    "close": "Close contact options",
+    "title": "Speak with {{owner}}",
+    "text": "Call or write directly. Messenger apps open outside this website.",
+    "call": "Call {{phone}}",
+    "whatsapp": "Write on WhatsApp",
+    "telegram": "Write on Telegram",
+    "instagram": "Follow on Instagram"
+  },
+  "chat": {
+    "open": "Open the website assistant",
+    "close": "Close the assistant",
+    "clear": "Clear conversation",
+    "title": "Website assistant",
+    "subtitle": "Automatic answers from our FAQ",
+    "disclaimer": "This assistant answers from prepared information only. For a quote or a specific case, contact {{owner}} directly.",
+    "inputLabel": "Your question",
+    "inputPlaceholder": "Type a question…",
+    "send": "Send",
+    "typing": "Assistant is typing",
+    "suggestionsLabel": "Suggested questions",
+    "you": "You",
+    "assistant": "Assistant"
+  },
+  "breadcrumbs": {
+    "label": "Breadcrumb",
+    "home": "Home"
+  },
+  "footer": {
+    "about": "Geodesy, land surveying and land development. Measurements, plans and documentation prepared with care for accuracy.",
+    "navigation": "Pages",
+    "services": "Services",
+    "contact": "Contact",
+    "legal": "{{company}} is operated by {{owner}}, individual entrepreneur.",
+    "copyright": "© {{year}} {{company}}"
+  },
+  "common": {
+    "demoBadge": "Demonstration content",
+    "hoursByArrangement": "By arrangement — please call ahead",
+    "owner": "{{owner}}",
+    "ownerRole": "Individual entrepreneur",
+    "phone": "Phone",
+    "messengers": "Messengers"
+  },
+  "notFound": {
+    "metaTitle": "Page not found — MAES17",
+    "metaDescription": "The page you requested does not exist.",
+    "code": "404",
+    "title": "This point is not on the map",
+    "text": "The page may have moved, or the address contains a typo. Start again from the home page or browse the services.",
+    "home": "Go to the home page",
+    "services": "Browse services"
+  },
+  "video": {
+    "pause": "Pause background video",
+    "play": "Play background video"
+  }
+}

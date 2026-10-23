@@ -1,0 +1,327 @@
+{
+  "welcome": "Hello! I can answer common questions about MAES17 services, surveys and how to get in touch. Choose a question below or type your own.",
+  "suggestions": [
+    "services",
+    "order",
+    "documents",
+    "contact"
+  ],
+  "intents": [
+    {
+      "id": "services",
+      "question": "What geodesy services do you provide?",
+      "keywords": [
+        "service",
+        "provide",
+        "offer",
+        "do you do",
+        "geodes",
+        "work",
+        "what can"
+      ],
+      "answer": "MAES17 works in eight areas: geodetic control networks, land surveying, topographic surveying, cadastral boundary surveys, construction surveying and setting-out, land management, as-built surveys, and engineering surveying. The exact scope of each project is agreed in advance.",
+      "links": [
+        {
+          "label": "See all services",
+          "to": "/services"
+        }
+      ]
+    },
+    {
+      "id": "order",
+      "question": "How can I order a land survey?",
+      "keywords": [
+        "order",
+        "book",
+        "request",
+        "start",
+        "hire",
+        "how can i get",
+        "land survey",
+        "need a survey"
+      ],
+      "answer": "Call {{owner}} at {{phone}} or write on WhatsApp or Telegram. Describe where the site is, what the survey is for and which documents you have. You will get the next steps and an estimate for your case.",
+      "links": [
+        {
+          "label": "Go to contacts",
+          "to": "/contacts"
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "question": "What documents should I prepare?",
+      "keywords": [
+        "document",
+        "paper",
+        "prepare",
+        "bring",
+        "need from me",
+        "title",
+        "deed"
+      ],
+      "answer": "Helpful documents include ownership or title documents, earlier survey plans and any design drawings. Requirements depend on the type of work, so describe your case and we will confirm exactly what is needed.",
+      "links": [
+        {
+          "label": "Read the FAQ",
+          "to": "/faq"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "question": "How can I contact your team?",
+      "keywords": [
+        "contact",
+        "phone",
+        "call",
+        "number",
+        "reach",
+        "whatsapp",
+        "telegram",
+        "talk",
+        "speak"
+      ],
+      "answer": "You can call {{owner}} at {{phone}}, or write on WhatsApp or Telegram. The contacts page also has a form that prepares a message with your project details.",
+      "links": [
+        {
+          "label": "Contacts page",
+          "to": "/contacts"
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "question": "How much does a survey cost?",
+      "keywords": [
+        "price",
+        "cost",
+        "how much",
+        "fee",
+        "rate",
+        "quote",
+        "estimate",
+        "expensive",
+        "cheap"
+      ],
+      "answer": "Prices are not published because they depend on the type of work, the size and access of the site and the deliverables. Share a short description of your project and you will receive an estimate for your specific case.",
+      "links": [
+        {
+          "label": "Contact us",
+          "to": "/contacts"
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "question": "How long does a survey take?",
+      "keywords": [
+        "how long",
+        "time",
+        "duration",
+        "when ready",
+        "deadline",
+        "fast",
+        "quick",
+        "urgent",
+        "days"
+      ],
+      "answer": "Timing depends on the scope, the site and the season, so no standard timeframe is promised here. When you describe the project, you will get a realistic schedule for it.",
+      "links": [
+        {
+          "label": "Contact us",
+          "to": "/contacts"
+        }
+      ]
+    },
+    {
+      "id": "topographic",
+      "question": "What does a topographic survey include?",
+      "keywords": [
+        "topograph",
+        "terrain",
+        "relief",
+        "contour",
+        "elevation",
+        "height"
+      ],
+      "answer": "A topographic survey records ground heights and relief together with buildings, roads, trees, visible utilities and other features. The result is usually a plan with contours and spot heights, and a digital terrain model when needed.",
+      "links": [
+        {
+          "label": "Topographic surveying",
+          "to": "/services/topographic-surveying"
+        }
+      ]
+    },
+    {
+      "id": "cadastral",
+      "question": "What is a cadastral survey?",
+      "keywords": [
+        "cadast",
+        "boundar",
+        "border",
+        "property line",
+        "plot",
+        "parcel",
+        "registration",
+        "register"
+      ],
+      "answer": "A cadastral survey compares title documents with the situation on site and determines property boundaries and boundary points. It is used for registration, transactions and boundary questions.",
+      "links": [
+        {
+          "label": "Cadastral surveying",
+          "to": "/services/cadastral-surveying"
+        }
+      ]
+    },
+    {
+      "id": "construction",
+      "question": "Do you do construction setting-out?",
+      "keywords": [
+        "construct",
+        "setting-out",
+        "setting out",
+        "stake",
+        "layout",
+        "building site",
+        "axes",
+        "foundation"
+      ],
+      "answer": "Construction surveying covers setting-out of axes, corners and levels from design drawings, and control measurements while the works progress.",
+      "links": [
+        {
+          "label": "Construction surveying",
+          "to": "/services/construction-surveying"
+        }
+      ]
+    },
+    {
+      "id": "asbuilt",
+      "question": "What is an as-built survey?",
+      "keywords": [
+        "as-built",
+        "as built",
+        "executive",
+        "completed",
+        "finished building"
+      ],
+      "answer": "An as-built survey records the final position and dimensions of what was constructed so it can be compared with the design and documented for acceptance or registration.",
+      "links": [
+        {
+          "label": "As-built surveys",
+          "to": "/services/as-built-surveys"
+        }
+      ]
+    },
+    {
+      "id": "difference",
+      "question": "What is the difference between topographic and cadastral surveying?",
+      "keywords": [
+        "difference",
+        "differ",
+        "vs",
+        "versus",
+        "compare"
+      ],
+      "answer": "A topographic survey shows the shape of the ground and the features on it, mainly for design. A cadastral survey determines legal property boundaries, mainly for registration and transactions. Some projects need both.",
+      "links": [
+        {
+          "label": "Read the FAQ",
+          "to": "/faq"
+        }
+      ]
+    },
+    {
+      "id": "area",
+      "question": "Where do you work?",
+      "keywords": [
+        "where",
+        "location",
+        "region",
+        "city",
+        "area",
+        "travel",
+        "come to"
+      ],
+      "answer": "The service area is being confirmed. Tell us where your site is and we will let you know whether the work can be arranged.",
+      "links": [
+        {
+          "label": "Contact us",
+          "to": "/contacts"
+        }
+      ]
+    },
+    {
+      "id": "hours",
+      "question": "What are your working hours?",
+      "keywords": [
+        "hours",
+        "open",
+        "schedule",
+        "working time",
+        "weekend"
+      ],
+      "answer": "Working hours are by arrangement. Please call {{phone}} or send a message, and a convenient time will be agreed.",
+      "links": [
+        {
+          "label": "Contacts page",
+          "to": "/contacts"
+        }
+      ]
+    },
+    {
+      "id": "who",
+      "question": "Who is behind MAES17?",
+      "keywords": [
+        "who",
+        "owner",
+        "company",
+        "about",
+        "maes",
+        "entrepreneur"
+      ],
+      "answer": "MAES17 is operated by {{owner}}, individual entrepreneur, together with a team of surveying and land management specialists.",
+      "links": [
+        {
+          "label": "About MAES17",
+          "to": "/about"
+        }
+      ]
+    },
+    {
+      "id": "greeting",
+      "question": "Hello",
+      "keywords": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening"
+      ],
+      "answer": "Hello! Ask about services, surveys, documents or how to get in touch.",
+      "links": []
+    },
+    {
+      "id": "thanks",
+      "question": "Thank you",
+      "keywords": [
+        "thank",
+        "thanks",
+        "great",
+        "ok"
+      ],
+      "answer": "You are welcome. If you would like to discuss a specific site, call {{phone}}.",
+      "links": []
+    }
+  ],
+  "fallback": {
+    "answer": "I don't have a prepared answer for that. For specific questions — your site, documents, prices or timing — please contact {{owner}} directly at {{phone}} or via WhatsApp or Telegram.",
+    "links": [
+      {
+        "label": "Contacts page",
+        "to": "/contacts"
+      }
+    ]
+  }
+}

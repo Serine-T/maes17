@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "Surveying and geodesy services — MAES17",
+    "description": "Geodetic control networks, land and topographic surveying, cadastral boundary surveys, construction setting-out, land development and as-built documentation."
+  },
+  "page": {
+    "title": "Services",
+    "lede": "Eight areas of work, each defined by what it is for, what it involves and what you receive. The final scope of every project is agreed in writing.",
+    "scopeNote": "The service list is being confirmed. If you need something not listed here, ask — related survey tasks can often be arranged."
+  },
+  "labels": {
+    "involves": "What the service involves",
+    "when": "When you need it",
+    "includes": "Typical activities",
+    "deliverables": "Possible deliverables",
+    "deliverablesNote": "Final deliverables depend on the project and are agreed before work begins.",
+    "request": "Request a consultation",
+    "requestText": "Call or message {{owner}} with the location, the purpose of the work and any documents you already have.",
+    "related": "Related services",
+    "otherServices": "Other services"
+  },
+  "items": {
+    "geodetic-control-networks": {
+      "title": "Geodesy and geodetic control networks",
+      "short": "Geodetic control",
+      "summary": "Reference points with known coordinates that tie every later measurement on a project together.",
+      "metaTitle": "Geodetic control networks and GNSS control points — MAES17",
+      "metaDescription": "Establishing and densifying geodetic control: GNSS and total station observations, network adjustment and coordinate lists for surveys and construction.",
+      "intro": "A control network is a set of marked points whose coordinates are determined precisely. Topographic surveys, boundary work and construction layout all depend on it for consistency.",
+      "when": [
+        "Before a large survey or construction project starts",
+        "When existing reference points are missing, damaged or unreliable",
+        "When several teams must work in one coordinate system"
+      ],
+      "includes": [
+        "Network design and point selection",
+        "Monumenting or recovering control points",
+        "GNSS and total station observations",
+        "Network adjustment and accuracy assessment"
+      ],
+      "deliverables": [
+        "Coordinate and height list of control points",
+        "Point descriptions with sketches or photos",
+        "Adjustment report"
+      ]
+    },
+    "land-surveying": {
+      "title": "Land surveying and dimensional measurements",
+      "short": "Land surveying",
+      "summary": "Measurements of plots, buildings and features for planning, design and documentation.",
+      "metaTitle": "Land surveying and measurement services — MAES17",
+      "metaDescription": "Measurement of land plots, buildings and site features with coordinate-based plans and dimensions prepared for planning, design and documentation.",
+      "intro": "Land surveying records the position and dimensions of plots, buildings, fences, roads and other features, producing a measured plan of the site as it exists.",
+      "when": [
+        "Planning a purchase, sale or division of land",
+        "Preparing for design or renovation work",
+        "Checking the actual dimensions of a plot or building"
+      ],
+      "includes": [
+        "Measurement of plot outlines and features",
+        "Building footprint and dimension measurement",
+        "Tie-in to a defined coordinate system"
+      ],
+      "deliverables": [
+        "Measured site plan",
+        "Coordinate list of measured points",
+        "Area calculations"
+      ]
+    },
+    "topographic-surveying": {
+      "title": "Topographic surveying and terrain mapping",
+      "short": "Topographic surveying",
+      "summary": "Plans of terrain relief and site features, with heights and contours, for design and construction.",
+      "metaTitle": "Topographic surveys and terrain mapping — MAES17",
+      "metaDescription": "Topographic surveys with contours, spot heights, utilities and site features. Digital terrain models and plans at the scale your designer needs.",
+      "intro": "A topographic survey shows the shape of the ground and everything on it: heights, slopes, buildings, roads, trees and visible utilities. It is the base drawing for most design work.",
+      "when": [
+        "Before architectural, road or landscape design",
+        "When calculating earthwork volumes",
+        "When planning drainage or site grading"
+      ],
+      "includes": [
+        "Measurement of spot heights and break lines",
+        "Survey of buildings, roads and visible utilities",
+        "Digital terrain model and contour generation"
+      ],
+      "deliverables": [
+        "Topographic plan at an agreed scale",
+        "Digital terrain model",
+        "Contour lines and spot heights in CAD format"
+      ]
+    },
+    "cadastral-surveying": {
+      "title": "Cadastral surveying and property boundary determination",
+      "short": "Cadastral surveying",
+      "summary": "Surveys that identify and document property boundaries for registration, transactions and disputes.",
+      "metaTitle": "Cadastral surveys and property boundary determination — MAES17",
+      "metaDescription": "Boundary surveys for land plots: comparing documents with the situation on site, determining boundary points and preparing materials for registration.",
+      "intro": "Cadastral surveying compares legal documents with the situation on the ground and determines the position of property boundaries and boundary points.",
+      "when": [
+        "Registering, dividing or merging land plots",
+        "Buying or selling property",
+        "Resolving uncertainty about where a boundary lies"
+      ],
+      "includes": [
+        "Review of title documents and existing cadastral data",
+        "Field measurement of boundary points",
+        "Comparison of measured and documented boundaries"
+      ],
+      "deliverables": [
+        "Boundary plan with coordinates",
+        "Area calculation",
+        "Materials prepared for submission, where applicable"
+      ]
+    },
+    "construction-surveying": {
+      "title": "Construction surveying and setting-out",
+      "short": "Construction surveying",
+      "summary": "Transferring design positions and levels to the site, and checking construction as it progresses.",
+      "metaTitle": "Construction surveying and setting-out — MAES17",
+      "metaDescription": "Setting-out of buildings, axes and levels from design drawings, construction control measurements and checks of built elements during the works.",
+      "intro": "Construction surveying puts the design on the ground: building corners, axes, levels and reference lines are marked so construction follows the approved plan.",
+      "when": [
+        "At the start of foundation and structural works",
+        "When axes and levels must be transferred between floors",
+        "When the contractor or client needs independent checks"
+      ],
+      "includes": [
+        "Setting-out of axes, corners and levels",
+        "Control measurements during construction",
+        "Checks of built elements against design"
+      ],
+      "deliverables": [
+        "Setting-out records",
+        "Control measurement reports",
+        "Deviation reports where required"
+      ]
+    },
+    "land-management": {
+      "title": "Land management and land development",
+      "short": "Land management",
+      "summary": "Spatial planning and documentation for using, dividing and developing land.",
+      "metaTitle": "Land management and land development services — MAES17",
+      "metaDescription": "Land management work: plot division and consolidation plans, land use documentation and spatial data for development projects.",
+      "intro": "Land management organises how land is used and divided. It combines survey data with planning requirements to prepare plot layouts and supporting documentation.",
+      "when": [
+        "Dividing or consolidating land plots",
+        "Preparing land for development",
+        "Changing or documenting land use"
+      ],
+      "includes": [
+        "Analysis of existing land data and constraints",
+        "Preparation of plot layout options",
+        "Coordination with surveys and documentation"
+      ],
+      "deliverables": [
+        "Plot division or layout plans",
+        "Area schedules",
+        "Supporting spatial data"
+      ]
+    },
+    "as-built-surveys": {
+      "title": "As-built surveys and technical documentation",
+      "short": "As-built surveys",
+      "summary": "Recording what was actually built, for acceptance, registration and future maintenance.",
+      "metaTitle": "As-built surveys and technical documentation — MAES17",
+      "metaDescription": "As-built surveys of buildings, structures and site works, compared with design, with drawings and documentation for acceptance and records.",
+      "intro": "An as-built survey records the final position and dimensions of constructed buildings, utilities and site works so they can be compared with the design and documented.",
+      "when": [
+        "Completing a construction project",
+        "Before registering a new or altered building",
+        "When reliable records of existing structures are missing"
+      ],
+      "includes": [
+        "Measurement of completed structures and site works",
+        "Comparison with design documentation",
+        "Preparation of as-built drawings"
+      ],
+      "deliverables": [
+        "As-built plan or drawings",
+        "Coordinate and height lists",
+        "Comparison notes against design"
+      ]
+    },
+    "engineering-surveying": {
+      "title": "Engineering and specialised surveying",
+      "short": "Engineering surveying",
+      "summary": "Surveys for roads, utilities, slopes and other engineering tasks with specific accuracy needs.",
+      "metaTitle": "Engineering and specialised surveying — MAES17",
+      "metaDescription": "Engineering surveys for roads, utilities, slopes and structures: profiles, cross-sections, volume calculations and repeated monitoring measurements.",
+      "intro": "Engineering surveying supports design and maintenance of infrastructure. It covers tasks such as longitudinal profiles, cross-sections, volume calculations and repeated measurements of movement.",
+      "when": [
+        "Designing roads, pipelines or other linear works",
+        "Calculating earthwork or stockpile volumes",
+        "Observing movement of slopes or structures over time"
+      ],
+      "includes": [
+        "Profiles and cross-sections",
+        "Volume calculations",
+        "Repeated measurements for monitoring"
+      ],
+      "deliverables": [
+        "Profile and cross-section drawings",
+        "Volume reports",
+        "Monitoring tables and reports"
+      ]
+    }
+  }
+}

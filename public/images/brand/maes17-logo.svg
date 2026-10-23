@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.8 48" width="587" height="192">
+  <title>MAES17</title>
+  <g fill="none" stroke="#222522" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 4C37 5 45 13 44 24C43 34 36 43 24 44C13 45 4 37 4 26C4 18 8 13 13 9C17 6 21 3.6 26 4Z" stroke-width="2" opacity="0.55"/>
+    <path d="M25 11C32 11.5 37.5 17 37 24.5C36.5 31.5 31 37 24 37C17 37 11.5 32 11.5 25C11.5 20 13.5 17 16.5 14.5C19 12.3 21.7 10.8 25 11Z" stroke-width="2"/>
+    <path d="M24 16.5L31 29H17Z" stroke-width="2.4" stroke="#D9581F"/>
+    <circle cx="24" cy="24.8" r="1.7" fill="#D9581F" stroke="none"/>
+  </g>
+  <g transform="translate(63 15) scale(0.9)"><g fill="none" stroke="#222522" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"><path d="M1 20V1L7.5 12L14 1V20"/><path d="M21 20L27 0L33 20"/><path d="M23.1 13H30.9"/><path d="M50 0H40V20H50"/><path d="M40 10H48"/><path d="M68 3.2C67 1.2 65 0 62.6 0C59.6 0 57.6 1.9 57.6 4.8C57.6 7.6 59.6 8.9 62.6 9.7C65.8 10.6 68 12 68 15.1C68 18.2 65.6 20 62.5 20C59.8 20 57.8 18.7 57 16.6"/><path d="M73 4L77 0V20"/><path d="M83 0H92L85 20"/></g></g>
+</svg>

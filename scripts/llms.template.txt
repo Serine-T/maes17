@@ -1,0 +1,23 @@
+# MAES17
+
+> MAES17 is a geodesy, land surveying and land development (land management) practice operated by Erik Tovmasyan, individual entrepreneur. Contact: phone/WhatsApp/Telegram +374 41 171793. The website is available in Armenian (default), Russian and English.
+
+MAES17 measures land and structures and prepares coordinates, plans and technical documentation for landowners, designers and builders. Prices and timeframes are not published; they are estimated per project. The geographic service area has not yet been published.
+
+## Services
+
+- [Geodesy and geodetic control networks]({{siteUrl}}/en/services/geodetic-control-networks/): reference points with known coordinates (GNSS and total station observations, network adjustment, coordinate lists).
+- [Land surveying and dimensional measurements]({{siteUrl}}/en/services/land-surveying/): measured site plans of plots, buildings and features.
+- [Topographic surveying and terrain mapping]({{siteUrl}}/en/services/topographic-surveying/): relief, spot heights, contours and site features; digital terrain models.
+- [Cadastral surveying and property boundary determination]({{siteUrl}}/en/services/cadastral-surveying/): comparing title documents with the site and determining boundary points.
+- [Construction surveying and setting-out]({{siteUrl}}/en/services/construction-surveying/): setting-out of axes and levels and control measurements during works.
+- [Land management and land development]({{siteUrl}}/en/services/land-management/): plot division and layout plans and supporting documentation.
+- [As-built surveys and technical documentation]({{siteUrl}}/en/services/as-built-surveys/): recording what was built and comparing it with design.
+- [Engineering and specialised surveying]({{siteUrl}}/en/services/engineering-surveying/): profiles, cross-sections, volumes and monitoring.
+
+## Key pages
+
+- [About MAES17]({{siteUrl}}/en/about/)
+- [Questions and answers]({{siteUrl}}/en/faq/)
+- [Contacts]({{siteUrl}}/en/contacts/)
+- Armenian: {{siteUrl}}/hy/ — Russian: {{siteUrl}}/ru/

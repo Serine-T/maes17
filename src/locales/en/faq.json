@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "Geodesy and land surveying FAQ — MAES17",
+    "description": "Answers about geodesy, topographic and cadastral surveys, when you need a land survey, what to prepare and how to contact a surveying specialist."
+  },
+  "page": {
+    "title": "Questions and answers",
+    "lede": "Plain answers about surveying work. If your question is about a specific site, it is faster to call."
+  },
+  "items": [
+    {
+      "id": "what-is-geodesy",
+      "question": "What is geodesy?",
+      "answer": "Geodesy is the science of measuring the shape of the Earth and the position of points on it.",
+      "more": "In practical work it provides the coordinate and height reference that surveys, maps and construction rely on. Geodetic control points make measurements taken at different times and by different teams consistent with each other."
+    },
+    {
+      "id": "topographic-vs-cadastral",
+      "question": "What is the difference between topographic surveying and cadastral surveying?",
+      "answer": "A topographic survey shows the shape of the ground and the features on it; a cadastral survey determines legal property boundaries.",
+      "more": "Topographic plans are used mainly for design and construction. Cadastral surveys compare title documents with the situation on site and are used for registration, transactions and boundary questions. Some projects need both."
+    },
+    {
+      "id": "when-land-survey",
+      "question": "When do I need a land survey?",
+      "answer": "Usually before buying, selling, dividing or registering land, and before designing or building on it.",
+      "more": "A survey is also useful when boundaries are unclear, when the actual dimensions of a plot or building are unknown, or when a designer asks for a measured base plan."
+    },
+    {
+      "id": "what-to-prepare",
+      "question": "What information is needed to request a surveying service?",
+      "answer": "The location of the site, the purpose of the work and any documents you already have.",
+      "more": "Useful documents include ownership or title documents, previous survey plans and design drawings. If you are unsure which documents apply, describe the situation and we will tell you what is needed for your case."
+    },
+    {
+      "id": "topographic-includes",
+      "question": "What does a topographic survey include?",
+      "answer": "Ground heights and relief, together with buildings, roads, trees, visible utilities and other site features.",
+      "more": "The result is usually a plan with contours and spot heights and, when needed, a digital terrain model. The scale and level of detail are agreed with you or your designer before the survey."
+    },
+    {
+      "id": "how-to-contact",
+      "question": "How can I contact a surveying specialist?",
+      "answer": "Call {{owner}} at {{phone}}, or write on WhatsApp or Telegram.",
+      "more": "You can also use the inquiry form on the contacts page to prepare a message with your project details."
+    },
+    {
+      "id": "price-and-time",
+      "question": "How much does a survey cost and how long does it take?",
+      "answer": "It depends on the type of work, the size and accessibility of the site and the deliverables required.",
+      "more": "We do not publish fixed prices or timeframes. After a short description of your project we can give an estimate for your specific case."
+    }
+  ]
+}

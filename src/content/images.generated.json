@@ -1,0 +1,191 @@
+{
+  "terrain-scan": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1420
+    ],
+    "width": 1420,
+    "height": 760,
+    "credit": null
+  },
+  "contour-relief": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 812,
+    "credit": null
+  },
+  "total-station": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1622
+    ],
+    "width": 1622,
+    "height": 1080,
+    "credit": null
+  },
+  "hero-video-poster": {
+    "widths": [
+      480,
+      800,
+      864
+    ],
+    "width": 864,
+    "height": 496,
+    "credit": null
+  },
+  "art-as-built": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-cadastre": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-control-network": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-land-division": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-profile": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-project-hillside": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-project-lakeside": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-project-plots": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-project-slope": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-relief-dusk": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2400
+    ],
+    "width": 2400,
+    "height": 1350,
+    "credit": null
+  },
+  "art-setting-out": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  },
+  "art-survey-plan": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      1800
+    ],
+    "width": 1800,
+    "height": 1200,
+    "credit": null
+  }
+}

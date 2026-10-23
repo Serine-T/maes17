@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "MAES17 — Geodesy, land surveying and land development",
+    "description": "Geodetic control, topographic and cadastral surveys, construction setting-out and land development documentation. Speak with {{owner}} at {{phone}}."
+  },
+  "hero": {
+    "title": "Precision that shapes the land.",
+    "lede": "Professional geodesy, surveying, and land development services built on accurate measurements, advanced technology, and trusted expertise.",
+    "ctaPrimary": "Our services",
+    "ctaSecondary": "Contact us",
+    "imageAlt": "Sunrise over dark mountain ridges with fog filling the valleys"
+  },
+  "intro": {
+    "title": "Every plan starts with a measured point.",
+    "paragraphs": [
+      "MAES17 works where land, property and construction meet. We measure terrain and structures, establish coordinates and prepare the drawings and documents that owners, designers and builders depend on.",
+      "Our approach is simple: understand what the measurement is for, choose the method that delivers the required accuracy, and document the result so it can be checked and reused."
+    ],
+    "link": "About our approach",
+    "imageAlt": "Mountain range in which half of the terrain is shown as a digital wireframe model"
+  },
+  "services": {
+    "title": "Services",
+    "lede": "From control networks to final as-built documentation, each service is scoped to the decision it has to support."
+  },
+  "method": {
+    "title": "How a survey comes together",
+    "lede": "Fieldwork, instruments and office processing follow one continuous, documented chain.",
+    "steps": [
+      {
+        "title": "Brief and existing documents",
+        "text": "We clarify the purpose of the work, review available plans, titles and previous surveys, and agree the scope and deliverables."
+      },
+      {
+        "title": "Reconnaissance and control",
+        "text": "The site is inspected and reference points are established or recovered, so every later measurement ties to a known coordinate system."
+      },
+      {
+        "title": "Field measurement",
+        "text": "Terrain, boundaries or structures are measured with methods suited to the site, such as satellite positioning or total station observations."
+      },
+      {
+        "title": "Processing and drafting",
+        "text": "Observations are checked, adjusted and turned into plans, terrain models, coordinate lists and drawings."
+      },
+      {
+        "title": "Delivery and support",
+        "text": "You receive the agreed documents and files, with explanations of what they show and how they can be used next."
+      }
+    ]
+  },
+  "technology": {
+    "title": "Technology in service of accuracy",
+    "lede": "Instruments only matter when the results are checked. We combine field equipment with careful processing and clear documentation.",
+    "items": [
+      {
+        "title": "Satellite positioning",
+        "text": "GNSS observations for control points and open terrain, tied to the coordinate system the project requires."
+      },
+      {
+        "title": "Total station measurement",
+        "text": "Angle and distance measurement for detailed surveys, structures and setting-out where line of sight is available."
+      },
+      {
+        "title": "Digital terrain models",
+        "text": "Surface models and contour plans prepared from field data for design, earthworks and volume calculations."
+      },
+      {
+        "title": "CAD and GIS deliverables",
+        "text": "Drawings and spatial data delivered in formats agreed with you and your designers."
+      }
+    ],
+    "note": "Specific equipment and expected accuracy are stated in the proposal for each project."
+  },
+  "projects": {
+    "title": "Selected work",
+    "lede": "Examples of the kinds of projects we take on.",
+    "notice": "These project cards are demonstration content. They will be replaced with verified MAES17 projects.",
+    "items": [
+      {
+        "title": "Topographic plan for a hillside residence",
+        "category": "Topographic surveying",
+        "imageAlt": "Contour plan of a hillside with a building footprint and spot heights"
+      },
+      {
+        "title": "Boundary survey of lakeside plots",
+        "category": "Cadastral surveying",
+        "imageAlt": "Plot map along a lake shore with one parcel outlined"
+      },
+      {
+        "title": "Plot division on hillside land",
+        "category": "Land management",
+        "imageAlt": "Agricultural strip fields with one plot outlined for division"
+      },
+      {
+        "title": "Terrain model for slope stabilisation",
+        "category": "Engineering surveying",
+        "imageAlt": "Shaded relief of a slope with movement vectors at monitoring points"
+      }
+    ]
+  },
+  "stats": {
+    "title": "MAES17 in numbers",
+    "lede": "Fieldwork, plans and documentation delivered for private and corporate clients.",
+    "notice": "Demonstration figures — they will be replaced with confirmed numbers.",
+    "items": {
+      "projects": "completed surveys and projects",
+      "clients": "private and corporate clients",
+      "years": "years of field experience",
+      "area": "hectares surveyed"
+    }
+  },
+  "why": {
+    "title": "What you can expect",
+    "items": [
+      {
+        "title": "Measured, then checked",
+        "text": "Field observations are verified before drawings are produced, and the methods used are documented with the results."
+      },
+      {
+        "title": "Clear scope from the start",
+        "text": "You know what will be measured, what you will receive and what information we need from you before work begins."
+      },
+      {
+        "title": "Direct communication",
+        "text": "You stay in direct contact with the project lead, by phone or messenger, throughout the work."
+      },
+      {
+        "title": "Solutions fitted to the task",
+        "text": "The method, level of detail and deliverables are chosen for your purpose rather than taken from a fixed package."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Common questions",
+    "lede": "Short answers about surveys, documents and how to start.",
+    "link": "All questions and answers"
+  },
+  "cta": {
+    "title": "Tell us about your site.",
+    "text": "Describe the land or structure, what the survey is for and any documents you already have. {{owner}} will reply with the next steps.",
+    "button": "Discuss your project"
+  }
+}
