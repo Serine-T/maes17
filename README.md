@@ -10,7 +10,8 @@ statically prerendered, so every public page ships as complete HTML with its own
 npm install
 npm run dev        # development server with hot reload → http://localhost:5173
 npm run build      # typecheck + client build + SSR build + static prerender → dist/
-npm run preview    # serve dist/ like a static host → http://localhost:4173
+npm run preview    # serve dist/ → http://localhost:4173 (same server as npm start)
+npm start          # production server with dynamic origin
 npm test           # unit and integration tests (Vitest)
 ```
 
@@ -18,13 +19,20 @@ Requires Node.js 20.19+ (22 LTS recommended).
 
 `.npmrc` sets `legacy-peer-deps=true`. npm 10.9 crashes with `Cannot read properties of null (reading 'edgesOut')` when it resolves Vitest's optional peer dependencies, and this setting avoids the crash. `@testing-library/dom` is listed explicitly for the same reason.
 
-### Environment variables
+### Site origin (domain) — dynamic
 
-| Variable        | Required for production | Purpose                                                                                                     |
-| --------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `VITE_SITE_URL` | **Yes**                 | Absolute origin with no trailing slash, e.g. `https://maes17.am`. It is used for canonical URLs, hreflang, the sitemap, Open Graph and JSON-LD. |
+No domain is hard-coded. Canonical URLs, hreflang, the sitemap, `robots.txt`, Open Graph and JSON-LD use the origin resolved in this order:
 
-Copy `.env.example` to `.env` and set it. If it is missing, the build prints a warning and falls back to `http://localhost:4173`. The domain is not known yet, so none was invented.
+1. **Build time:** `VITE_SITE_URL` if set, otherwise the production URL the hosting platform exposes (Vercel `VERCEL_PROJECT_PRODUCTION_URL`, Netlify `URL`, Cloudflare Pages `CF_PAGES_URL`, Render `RENDER_EXTERNAL_URL`, Railway `RAILWAY_PUBLIC_DOMAIN`). See `scripts/site-origin.mjs`.
+2. **Request time:** when the build did not know the domain, pages contain the reserved placeholder `https://site-origin.invalid`. `npm start` (`scripts/preview.mjs`) replaces it with the domain of each request, so one build works on any domain.
+3. **Browser:** after client-side navigation, head tags use `window.location.origin`.
+
+| Variable        | When                  | Purpose                                                                           |
+| --------------- | --------------------- | --------------------------------------------------------------------------------- |
+| `VITE_SITE_URL` | build (optional)      | Fixed origin, e.g. `https://maes17.am`. Required only on plain static hosts.      |
+| `PORT`          | `npm start`           | Port, default 4173.                                                               |
+| `ALLOWED_HOSTS` | `npm start` (prod)    | Comma-separated hostnames; requests with other `Host` headers fall back to the first one, which prevents canonical spoofing. |
+| `TRUST_PROXY=1` | `npm start` behind a proxy | Use `X-Forwarded-Proto` / `X-Forwarded-Host`.                               |
 
 ## Stack
 
@@ -198,7 +206,7 @@ On mobile (simulated slow 4G), LCP is about 3.6–4.2 s. Most of it is render de
 ## Deployment
 
 Deploy the `dist/` directory to any static host:
-1. Set `VITE_SITE_URL`.
+1. Either run it with `npm start` (dynamic origin; set `ALLOWED_HOSTS`), deploy to a platform listed above, or set `VITE_SITE_URL` for a plain static host.
 2. Run `npm run build`.
 3. Upload `dist/`.
 
@@ -214,4 +222,4 @@ Deploy the `dist/` directory to any static host:
 - **Translations:** review the Armenian and Russian service terminology. For example, ցանցի հավասարակշռում vs. հավասարեցում, and «Строительная геодезия» as the short label.
 - **Missing company data:** confirm the service list, service area, working hours, and any email or office address, then add them in `company.ts`.
 - **Demonstration projects:** replace them with verified projects and set `demo: false`.
-- **Domain:** set `VITE_SITE_URL`, then submit the sitemap in Google Search Console and Yandex Webmaster.
+- **Domain:** once it is live, submit `https://<domain>/sitemap.xml` in Google Search Console and Yandex Webmaster.

@@ -37,6 +37,6 @@ export async function render(url: string): Promise<RenderResult> {
 }
 
 export { indexableRoutes, routeToPath } from '@/app/routes';
-export { locales, defaultLocale, siteUrl, isSiteUrlConfigured, localeMeta } from '@/config/site';
+export { locales, defaultLocale, siteUrl, isSiteUrlConfigured, localeMeta, ORIGIN_PLACEHOLDER } from '@/config/site';
 export { localizePath } from '@/i18n/locale-utils';
 export { canonicalUrl } from '@/seo/canonical';

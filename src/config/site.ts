@@ -10,10 +10,22 @@ export const localeMeta: Record<Locale, { hreflang: string; ogLocale: string; na
   en: { hreflang: 'en', ogLocale: 'en_US', nativeName: 'English', short: 'Eng' },
 };
 
-const FALLBACK_SITE_URL = 'http://localhost:4173';
+/** Reserved placeholder origin (.invalid TLD) — must match scripts/site-origin.mjs. */
+export const ORIGIN_PLACEHOLDER = 'https://site-origin.invalid';
 
-/** Absolute site origin used for canonicals, sitemap and structured data. Set VITE_SITE_URL at build time. */
-export const siteUrl: string = (import.meta.env.VITE_SITE_URL || FALLBACK_SITE_URL).replace(/\/+$/, '');
-export const isSiteUrlConfigured = Boolean(import.meta.env.VITE_SITE_URL);
+const configured = (import.meta.env.VITE_SITE_URL || '').replace(/\/+$/, '');
+
+/**
+ * Absolute site origin for canonicals, hreflang, sitemap and structured data.
+ *
+ * Resolution order:
+ * 1. Build time: VITE_SITE_URL or the hosting platform's production URL (see vite.config.ts).
+ * 2. Browser: the origin the page is actually served from (window.location.origin).
+ * 3. Prerender without a known origin: ORIGIN_PLACEHOLDER, which scripts/serve.mjs replaces
+ *    with the requesting host on every response.
+ */
+export const siteUrl: string =
+  configured || (typeof window !== 'undefined' && window.location?.origin ? window.location.origin : ORIGIN_PLACEHOLDER);
+export const isSiteUrlConfigured = Boolean(configured);
 
 export const LANGUAGE_STORAGE_KEY = 'maes17.lang';

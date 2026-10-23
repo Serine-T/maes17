@@ -22,12 +22,12 @@ const {
   canonicalUrl,
 } = server;
 
-if (!isSiteUrlConfigured) {
-  console.warn(
-    `\n⚠  VITE_SITE_URL is not set. Canonical URLs, hreflang, sitemap and JSON-LD use ${siteUrl}.\n` +
-      '   Set VITE_SITE_URL (see .env.example) before deploying to production.\n',
-  );
-}
+console.log(
+  isSiteUrlConfigured
+    ? `Site origin: ${siteUrl}`
+    : `Site origin: dynamic — absolute URLs use ${siteUrl} and are filled in per request by \`npm start\`.\n` +
+        '  On a plain static host, set VITE_SITE_URL (or deploy on Vercel/Netlify/Cloudflare/Render) instead.',
+);
 
 let template = await readFile(join(clientDir, 'index.html'), 'utf8');
 

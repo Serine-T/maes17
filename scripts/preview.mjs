@@ -1,9 +1,16 @@
-// Minimal static server for the prerendered build, mirroring typical static hosting:
-// directory indexes, trailing-slash redirects and dist/404.html for unknown paths.
+// Static server for the prerendered build (`npm run preview` / `npm start`):
+// directory indexes, canonical redirects, dist/404.html for unknown paths, compression,
+// and dynamic origin: when the build did not know the public domain, the placeholder
+// origin in HTML/XML/TXT responses is replaced with the domain the request was made to.
+//
+// Env: PORT (default 4173), SITE_URL (fixed origin, skips detection),
+//      ALLOWED_HOSTS (comma-separated; recommended in production to block Host-header spoofing),
+//      TRUST_PROXY=1 (use X-Forwarded-Proto/Host from a reverse proxy).
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
 import { brotliCompressSync, constants, gzipSync } from 'node:zlib';
+import { ORIGIN_PLACEHOLDER, resolveSiteOrigin } from './site-origin.mjs';
 import { fileURLToPath } from 'node:url';
 
 const dist = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -22,6 +29,27 @@ const types = {
   '.txt': 'text/plain; charset=utf-8',
   '.webmanifest': 'application/manifest+json',
 };
+
+const fixedOrigin = resolveSiteOrigin(process.env);
+const allowedHosts = (process.env.ALLOWED_HOSTS ?? '')
+  .split(',')
+  .map((h) => h.trim().toLowerCase())
+  .filter(Boolean);
+const trustProxy = process.env.TRUST_PROXY === '1';
+const HOST_PATTERN = /^[a-z0-9.-]+(:\d{1,5})?$/;
+
+/** Public origin for this request, validated so a forged Host header cannot inject URLs. */
+function requestOrigin(req) {
+  if (fixedOrigin) return fixedOrigin;
+  const header = (name) => String(req.headers[name] ?? '').split(',')[0].trim().toLowerCase();
+  let host = (trustProxy && header('x-forwarded-host')) || header('host');
+  if (!HOST_PATTERN.test(host) || (allowedHosts.length && !allowedHosts.includes(host))) {
+    host = allowedHosts[0] ?? `localhost:${port}`;
+  }
+  const forwarded = trustProxy ? header('x-forwarded-proto') : '';
+  const proto = forwarded === 'https' || forwarded === 'http' ? forwarded : req.socket.encrypted ? 'https' : 'http';
+  return `${proto}://${host}`;
+}
 
 async function isFile(p) {
   try {
@@ -63,10 +91,13 @@ createServer(async (req, res) => {
   }
   let body = await readFile(file);
   const type = types[extname(file)] ?? 'application/octet-stream';
+  if (/html|xml|text\/plain/.test(type) && body.includes(ORIGIN_PLACEHOLDER)) {
+    body = Buffer.from(body.toString('utf8').replaceAll(ORIGIN_PLACEHOLDER, requestOrigin(req)));
+  }
   const headers = {
     'Content-Type': type,
     'Cache-Control': file.includes('/assets/') ? 'public, max-age=31536000, immutable' : 'no-cache',
-    Vary: 'Accept-Encoding',
+    Vary: fixedOrigin ? 'Accept-Encoding' : 'Accept-Encoding, Host',
   };
   // Compress text responses like a production host would.
   const accept = String(req.headers['accept-encoding'] ?? '');
