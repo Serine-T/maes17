@@ -15,6 +15,12 @@
       "more": "In practical work it provides the coordinate and height reference that surveys, maps and construction rely on. Geodetic control points make measurements taken at different times and by different teams consistent with each other."
     },
     {
+      "id": "team-experience",
+      "question": "How experienced is your team?",
+      "answer": "MAES17 is a professional team with more than {{years}} years of experience in geodesy, land surveying and land management.",
+      "more": "The team carries out fieldwork, data processing and documentation for topographic, cadastral, construction and engineering surveys. Every project has a responsible lead you can contact directly."
+    },
+    {
       "id": "topographic-vs-cadastral",
       "question": "What is the difference between topographic surveying and cadastral surveying?",
       "answer": "A topographic survey shows the shape of the ground and the features on it; a cadastral survey determines legal property boundaries.",

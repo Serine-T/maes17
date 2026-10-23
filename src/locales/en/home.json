@@ -1,11 +1,11 @@
 {
   "meta": {
     "title": "MAES17 — Geodesy, land surveying and land development",
-    "description": "Geodetic control, topographic and cadastral surveys, construction setting-out and land development documentation. Speak with {{owner}} at {{phone}}."
+    "description": "Geodetic control, topographic and cadastral surveys, construction setting-out and land development documentation by a professional team with more than {{years}} years of experience. Call {{phone}}."
   },
   "hero": {
     "title": "Precision that shapes the land.",
-    "lede": "Professional geodesy, surveying, and land development services built on accurate measurements, advanced technology, and trusted expertise.",
+    "lede": "Geodesy, land surveying and land development by a professional team with more than {{years}} years of experience: accurate measurements, modern technology and documentation you can rely on.",
     "ctaPrimary": "Our services",
     "ctaSecondary": "Contact us",
     "imageAlt": "Sunrise over dark mountain ridges with fog filling the valleys"
@@ -102,7 +102,7 @@
   "stats": {
     "title": "MAES17 in numbers",
     "lede": "Fieldwork, plans and documentation delivered for private and corporate clients.",
-    "notice": "Demonstration figures — they will be replaced with confirmed numbers.",
+    "notice": "Figures marked * are demonstration values and will be replaced with confirmed numbers.",
     "items": {
       "projects": "completed surveys and projects",
       "clients": "private and corporate clients",
@@ -114,8 +114,8 @@
     "title": "What you can expect",
     "items": [
       {
-        "title": "Measured, then checked",
-        "text": "Field observations are verified before drawings are produced, and the methods used are documented with the results."
+        "title": "More than {{years}} years of experience",
+        "text": "Our specialists have worked in geodesy, surveying and land management for over a decade, and every field result is checked before drawings are produced."
       },
       {
         "title": "Clear scope from the start",

@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "MAES17",
     "defaultTitle": "MAES17 — Geodesy, land surveying and land development",
-    "defaultDescription": "MAES17 provides geodetic, topographic, cadastral and construction surveying and land development services. Contact {{owner}} at {{phone}}."
+    "defaultDescription": "MAES17 provides geodetic, topographic, cadastral and construction surveying and land development services, delivered by a professional team with more than {{years}} years of experience. Contact {{owner}} at {{phone}}."
   },
   "brand": {
     "tagline": "Precision. Land. Expertise.",

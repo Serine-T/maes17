@@ -11,6 +11,9 @@ import type { Locale } from './site';
  * Fields set to `null` are unknown and intentionally not rendered. Fill them in only
  * with verified information.
  */
+/** Professional experience of the team, in years (confirmed by the owner). */
+const EXPERIENCE_YEARS = 10;
+
 export const companyConfig = {
   name: 'MAES17',
   owner: {
@@ -26,6 +29,8 @@ export const companyConfig = {
       en: 'Erik Tovmasyan',
     },
   },
+  /** Shown in copy as "more than N years" ({{years}}) and in the statistics section. */
+  experienceYears: EXPERIENCE_YEARS,
   contact: {
     /** E.164 format, used in tel: links and structured data. */
     phone: '+37441171793',
@@ -55,16 +60,15 @@ export const companyConfig = {
     ogImage: '/images/brand/og-image.jpg',
   },
   /**
-   * Figures for the statistics section. PLACEHOLDERS: replace with real numbers and set
-   * `confirmed: true`; until then the section shows a "demonstration figures" notice.
+   * Figures for the statistics section. Items with `confirmed: false` are PLACEHOLDERS,
+   * marked with an asterisk and explained by a "demonstration figures" note.
    */
   stats: {
-    confirmed: false,
     items: [
-      { key: 'projects', value: 250, suffix: '+' },
-      { key: 'clients', value: 180, suffix: '+' },
-      { key: 'years', value: 10, suffix: '+' },
-      { key: 'area', value: 1200, suffix: '+' },
+      { key: 'projects', value: 250, suffix: '+', confirmed: false },
+      { key: 'clients', value: 180, suffix: '+', confirmed: false },
+      { key: 'years', value: EXPERIENCE_YEARS, suffix: '+', confirmed: true },
+      { key: 'area', value: 1200, suffix: '+', confirmed: false },
     ],
   },
   /**
@@ -85,5 +89,6 @@ export function companyInterpolation(locale: Locale) {
     company: companyConfig.name,
     owner: companyConfig.owner.localizedName[locale],
     phone: companyConfig.contact.phoneDisplay,
+    years: String(companyConfig.experienceYears),
   };
 }

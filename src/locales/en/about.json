@@ -1,17 +1,17 @@
 {
   "meta": {
     "title": "About MAES17 — Geodesy and land surveying by {{owner}}",
-    "description": "How MAES17 approaches geodesy, surveying and land development: purpose-driven measurement, checked results and clear documentation. Operated by {{owner}}, individual entrepreneur."
+    "description": "MAES17 is a professional team of geodesy and land surveying specialists with more than {{years}} years of experience, led by {{owner}}, individual entrepreneur. Checked results and clear documentation."
   },
   "hero": {
     "title": "Measurement you can build on.",
-    "lede": "MAES17 is a geodesy, land surveying and land development practice. We turn land and structures into reliable coordinates, plans and documents.",
+    "lede": "MAES17 is a professional team in geodesy, land surveying and land development with more than {{years}} years of experience. We turn land and structures into reliable coordinates, plans and documents.",
     "imageAlt": "Shaded relief of mountain ridges at dusk with faint contour lines"
   },
   "overview": {
     "title": "Who we are",
     "paragraphs": [
-      "MAES17 is operated by {{owner}}, individual entrepreneur, together with a team of qualified surveying and land management specialists. The team covers the full chain of survey work: establishing control, measuring in the field, processing observations and preparing the plans and files that clients need.",
+      "MAES17 is operated by {{owner}}, individual entrepreneur, together with a professional team of surveying and land management specialists with more than {{years}} years of experience. The team covers the full chain of survey work: establishing control, measuring in the field, processing observations and preparing the plans and files that clients need.",
       "Clients include private landowners, designers, builders and organisations that need dependable spatial information before they buy, design, build or register."
     ]
   },
@@ -46,7 +46,7 @@
   },
   "team": {
     "title": "Expertise",
-    "text": "{{owner}} leads a team of specialists in geodesy, surveying and land management who carry out the fieldwork, data processing and documentation. Details of the team's qualifications and project experience will be published here once confirmed."
+    "text": "{{owner}} leads a professional team of specialists in geodesy, surveying and land management with more than {{years}} years of experience. The team carries out the fieldwork, data processing and documentation for every project."
   },
   "methodology": {
     "title": "Working methodology",

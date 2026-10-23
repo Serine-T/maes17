@@ -278,9 +278,14 @@
         "company",
         "about",
         "maes",
-        "entrepreneur"
+        "entrepreneur",
+        "experience",
+        "experienced",
+        "years",
+        "team",
+        "specialist"
       ],
-      "answer": "MAES17 is operated by {{owner}}, individual entrepreneur, together with a team of surveying and land management specialists.",
+      "answer": "MAES17 is operated by {{owner}}, individual entrepreneur, together with a professional team of surveying and land management specialists with more than {{years}} years of experience.",
       "links": [
         {
           "label": "About MAES17",

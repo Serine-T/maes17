@@ -31,6 +31,9 @@ describe('local chat engine', () => {
     ['ru', 'Какие услуги вы оказываете', 'services'],
     ['hy', 'Ի՞նչ արժե', 'price'],
     ['hy', 'Ինչ փաստաթղթեր են պետք', 'documents'],
+    ['en', 'How much experience does your team have?', 'who'],
+    ['ru', 'Какой у вас опыт?', 'who'],
+    ['hy', 'Ինչքան փորձ ունի ձեր թիմը', 'who'],
     ['hy', 'Ի՞նչ ծառայություններ եք մատուցում', 'services'],
   ];
 

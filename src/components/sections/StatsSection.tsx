@@ -73,7 +73,7 @@ export function StatsSection() {
             </h2>
             <p className="mt-4 max-w-xl text-lg text-ink-muted">{t('stats.lede')}</p>
           </div>
-          {!stats.confirmed ? (
+          {stats.items.some((item) => !item.confirmed) ? (
             <p className="max-w-xs border-l-2 border-signal pl-4 text-sm text-graphite-soft">{t('stats.notice')}</p>
           ) : null}
         </Reveal>
@@ -83,6 +83,11 @@ export function StatsSection() {
               <dt className="order-2 mt-3 max-w-[14rem] text-[0.9375rem] leading-snug text-ink-muted">{t(`stats.items.${item.key}`)}</dt>
               <dd className="order-1 type-condensed text-[clamp(3.75rem,2rem+6vw,8rem)] text-graphite">
                 <Odometer value={item.value} suffix={item.suffix} />
+                {!item.confirmed ? (
+                  <span className="align-super font-sans text-[0.25em] text-signal" aria-hidden="true">
+                    *
+                  </span>
+                ) : null}
               </dd>
             </Reveal>
           ))}
