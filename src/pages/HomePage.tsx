@@ -5,8 +5,8 @@ import { ArrowRight, ArrowUpRight, Info } from 'lucide-react';
 import { companyConfig } from '@/config/company';
 import { projects } from '@/content/projects';
 import { ImmersiveHero } from '@/components/sections/ImmersiveHero';
-import { ServicesAccordion } from '@/components/sections/ServicesAccordion';
-import { MethodTraverse } from '@/components/sections/MethodTraverse';
+import { ServiceCards } from '@/components/sections/ServiceCards';
+import { HowItWorks } from '@/components/sections/HowItWorks';
 import { FaqList } from '@/components/sections/FaqList';
 import { ContactCta } from '@/components/sections/ContactCta';
 import { StatsSection } from '@/components/sections/StatsSection';
@@ -66,13 +66,12 @@ export function HomePage() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
           </LocalizedLink>
         </div>
-        <ServicesAccordion />
+        <ServiceCards />
       </section>
-      <MethodTraverse />
       <Technology />
       <Projects />
       <StatsSection />
-      <WhyUs />
+      <HowItWorks />
       <section aria-labelledby="faq-title" className="container-wide grid gap-12 py-24 md:grid-cols-6 md:py-32">
         <Reveal className="md:col-span-2">
           <h2 id="faq-title" className="type-display text-[clamp(2rem,1.4rem+2.4vw,3.5rem)]">
@@ -234,31 +233,6 @@ function Projects() {
               </li>
             );
           })}
-        </ul>
-      </div>
-    </section>
-  );
-}
-
-function WhyUs() {
-  const { t } = useTranslation('home');
-  const items = t('why.items', { returnObjects: true }) as TitledText[];
-  return (
-    <section aria-labelledby="why-title" className="survey-grid">
-      <div className="container-wide grid gap-14 py-24 md:grid-cols-6 md:py-36">
-        <Reveal className="md:col-span-2">
-          <h2 id="why-title" className="type-display text-[clamp(2.1rem,1.4rem+2.6vw,3.75rem)]">
-            {t('why.title')}
-          </h2>
-        </Reveal>
-        <ul className="grid gap-x-12 gap-y-14 sm:grid-cols-2 md:col-span-4">
-          {items.map((item, i) => (
-            <Reveal as="li" key={item.title} delay={i * 90} className="border-t border-graphite/20 pt-6">
-              <TrigMarker className="h-4 w-4 text-signal" />
-              <h3 className="mt-5 font-serif text-2xl leading-snug">{item.title}</h3>
-              <p className="mt-3 leading-relaxed text-ink-muted">{item.text}</p>
-            </Reveal>
-          ))}
         </ul>
       </div>
     </section>

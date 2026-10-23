@@ -110,27 +110,6 @@
       "area": "hectares surveyed"
     }
   },
-  "why": {
-    "title": "What you can expect",
-    "items": [
-      {
-        "title": "More than {{years}} years of experience",
-        "text": "Our specialists have worked in geodesy, surveying and land management for over a decade, and every field result is checked before drawings are produced."
-      },
-      {
-        "title": "Clear scope from the start",
-        "text": "You know what will be measured, what you will receive and what information we need from you before work begins."
-      },
-      {
-        "title": "Direct communication",
-        "text": "You stay in direct contact with the project lead, by phone or messenger, throughout the work."
-      },
-      {
-        "title": "Solutions fitted to the task",
-        "text": "The method, level of detail and deliverables are chosen for your purpose rather than taken from a fixed package."
-      }
-    ]
-  },
   "faq": {
     "title": "Common questions",
     "lede": "Short answers about surveys, documents and how to start.",
