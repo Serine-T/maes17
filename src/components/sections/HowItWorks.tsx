@@ -1,26 +1,30 @@
 import { useRef, useState, type CSSProperties } from 'react';
-import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion, useMotionValueEvent, useReducedMotion, useScroll } from 'motion/react';
 import type { ImageName } from '@/content/images';
 import { Picture } from '@/components/ui/Picture';
 
-interface Step {
+export interface ScrollStep {
   title: string;
   text: string;
 }
 
-/** One illustration per step of the process, in order. */
-const STEP_IMAGES: ImageName[] = ['art-cadastre', 'art-control-network', 'total-station', 'art-profile', 'art-survey-plan'];
+interface Props {
+  /** id of the section heading (used for anchors and aria-labelledby). */
+  headingId: string;
+  title: string;
+  lede?: string;
+  steps: ScrollStep[];
+  /** One illustration per step, in order. */
+  images: ImageName[];
+}
 
 /**
- * "How it works": a scroll-driven process. On large screens the section pins to the
+ * "How it works": a scroll-driven sequence (process steps or principles). On large screens the section pins to the
  * viewport while the visitor scrolls; the active step expands, its large title is shown
  * on the left and the matching image crossfades on the right. On small screens the steps
  * are simply stacked. All step text is always in the HTML.
  */
-export function HowItWorks() {
-  const { t } = useTranslation('home');
-  const steps = t('method.steps', { returnObjects: true }) as Step[];
+export function HowItWorks({ headingId, title, lede, steps, images }: Props) {
   const ref = useRef<HTMLElement>(null);
   const reduce = useReducedMotion();
   const [active, setActive] = useState(0);
@@ -43,16 +47,16 @@ export function HowItWorks() {
   const current = steps[active];
 
   return (
-    <section ref={ref} aria-labelledby="method-title" className="relative bg-graphite text-paper lg:h-[calc(var(--steps)*75vh+25vh)]" style={{ '--steps': steps.length } as CSSProperties}>
+    <section ref={ref} aria-labelledby={headingId} className="relative bg-graphite text-paper lg:h-[calc(var(--steps)*75vh+25vh)]" style={{ '--steps': steps.length } as CSSProperties}>
       <div className="survey-grid survey-grid-dark lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col">
         <div className="container-wide pb-10 pt-20 text-center md:pt-24 lg:pb-8 lg:pt-[calc(var(--header-h)+2rem)]">
-          <h2 id="method-title" className="type-display text-[clamp(2.1rem,1.4rem+2.6vw,3.75rem)]">
-            {t('method.title')}
+          <h2 id={headingId} className="type-display text-[clamp(2.1rem,1.4rem+2.6vw,3.75rem)]">
+            {title}
           </h2>
           <svg viewBox="0 0 220 14" className="mx-auto mt-3 h-3 w-44 text-signal" aria-hidden="true">
             <path d="M2 9C40 3 70 12 110 7s70-5 108 1" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
           </svg>
-          <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-paper/70">{t('method.lede')}</p>
+          {lede ? <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-paper/70">{lede}</p> : null}
         </div>
 
         <div className="container-wide grid flex-1 gap-10 pb-20 lg:min-h-0 lg:grid-cols-12 lg:gap-8 lg:pb-12">
@@ -101,7 +105,7 @@ export function HowItWorks() {
                     <div className="overflow-hidden">
                       <p className="pb-5 pl-11 leading-relaxed text-paper/70">{step.text}</p>
                       <div className="mb-6 ml-11 aspect-[4/3] overflow-hidden lg:hidden">
-                        <Picture name={STEP_IMAGES[i] ?? 'art-survey-plan'} alt="" sizes="90vw" className="h-full w-full object-cover" />
+                        <Picture name={images[i] ?? 'art-survey-plan'} alt="" sizes="90vw" className="h-full w-full object-cover" />
                       </div>
                     </div>
                   </div>
@@ -112,7 +116,7 @@ export function HowItWorks() {
 
           {/* Image of the active step (desktop). */}
           <div className="relative hidden overflow-hidden lg:col-span-4 lg:block lg:min-h-[22rem]" aria-hidden="true">
-            {STEP_IMAGES.slice(0, steps.length).map((image, i) => (
+            {images.slice(0, steps.length).map((image, i) => (
               <div
                 key={image}
                 className={`absolute inset-0 transition-[opacity,transform] duration-[900ms] ease-[var(--ease-survey)] ${

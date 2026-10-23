@@ -2,10 +2,10 @@ import { useTranslation } from 'react-i18next';
 import { ArrowRight, Check } from 'lucide-react';
 import { ImmersiveHero } from '@/components/sections/ImmersiveHero';
 import { ContactCta } from '@/components/sections/ContactCta';
+import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Reveal } from '@/components/animations/Reveal';
 import { Picture } from '@/components/ui/Picture';
 import { LocalizedLink } from '@/components/ui/LocalizedLink';
-import { TrigMarker } from '@/components/ui/TrigMarker';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { useBreadcrumbs } from '@/app/usePage';
 
@@ -64,22 +64,6 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section aria-labelledby="values-title" className="container-wide py-24 md:py-36">
-        <Reveal>
-          <h2 id="values-title" className="type-display max-w-2xl text-[clamp(2.1rem,1.4rem+2.6vw,3.75rem)]">
-            {t('values.title')}
-          </h2>
-        </Reveal>
-        <ul className="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-          {values.map((v, i) => (
-            <Reveal as="li" key={v.title} delay={i * 80} className="border-t border-graphite/20 pt-6">
-              <TrigMarker className="h-4 w-4 text-signal" />
-              <h3 className="mt-5 font-serif text-2xl leading-snug">{v.title}</h3>
-              <p className="mt-3 leading-relaxed text-ink-muted">{v.text}</p>
-            </Reveal>
-          ))}
-        </ul>
-      </section>
 
       <section aria-labelledby="tech-title" className="bg-paper-deep">
         <div className="container-wide grid gap-14 py-24 md:grid-cols-12 md:py-36">
@@ -114,6 +98,13 @@ export function AboutPage() {
           </div>
         </div>
       </section>
+
+      <HowItWorks
+        headingId="values-title"
+        title={t('values.title')}
+        steps={values}
+        images={['art-control-network', 'art-setting-out', 'art-as-built', 'art-project-hillside']}
+      />
 
       <section aria-labelledby="method-title" className="container-wide grid gap-12 py-24 md:grid-cols-6 md:py-32">
         <Reveal className="md:col-span-3">

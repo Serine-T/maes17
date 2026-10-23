@@ -6,7 +6,7 @@ import { companyConfig } from '@/config/company';
 import { projects } from '@/content/projects';
 import { ImmersiveHero } from '@/components/sections/ImmersiveHero';
 import { ServiceCards } from '@/components/sections/ServiceCards';
-import { HowItWorks } from '@/components/sections/HowItWorks';
+import { HowItWorks, type ScrollStep } from '@/components/sections/HowItWorks';
 import { FaqList } from '@/components/sections/FaqList';
 import { ContactCta } from '@/components/sections/ContactCta';
 import { StatsSection } from '@/components/sections/StatsSection';
@@ -71,7 +71,13 @@ export function HomePage() {
       <Technology />
       <Projects />
       <StatsSection />
-      <HowItWorks />
+      <HowItWorks
+        headingId="method-title"
+        title={t('method.title')}
+        lede={t('method.lede')}
+        steps={t('method.steps', { returnObjects: true }) as ScrollStep[]}
+        images={['art-cadastre', 'art-control-network', 'total-station', 'art-profile', 'art-survey-plan']}
+      />
       <section aria-labelledby="faq-title" className="container-wide grid gap-12 py-24 md:grid-cols-6 md:py-32">
         <Reveal className="md:col-span-2">
           <h2 id="faq-title" className="type-display text-[clamp(2rem,1.4rem+2.4vw,3.5rem)]">
